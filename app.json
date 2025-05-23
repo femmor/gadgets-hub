@@ -1,6 +1,7 @@
 {
   "expo": {
     "name": "gadgets-hub",
+    "scheme": "gadgets-hub",
     "slug": "gadgets-hub",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,6 +25,7 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": ["expo-router"]
   }
 }
