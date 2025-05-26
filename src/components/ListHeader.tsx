@@ -10,30 +10,7 @@ import {
 } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 import COLORS from '../constants';
-
-const items = [
-    {
-        "name": "Electronics",
-        "slug": "electronics",
-        "imageUrl": "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "name": "Phones",
-        "slug": "mobile-phones",
-        "imageUrl": "https://images.unsplash.com/photo-1663245482988-22fad02654e3?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-    },
-    {
-        "name": "Laptops",
-        "slug": "laptops",
-        "imageUrl": "https://images.pexels.com/photos/7974/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1600"
-    },
-    {
-        "name": "Cameras",
-        "slug": "cameras",
-        "imageUrl": "https://images.pexels.com/photos/51383/photo-camera-subject-photographer-51383.jpeg?auto=compress&cs=tinysrgb&w=1600"
-    }
-
-]
+import { CATEGORIES } from '../utils/categories';
 
 const placholderFirstName = 'Femmy';
 export const placholderLastName = "Emmy";
@@ -93,7 +70,7 @@ export const ListHeader = () => {
             <View style={styles.categoriesContainer}>
                 <Text style={styles.sectionTitle}>Categories</Text>
                 <FlatList
-                    data={items}
+                    data={CATEGORIES}
                     renderItem={({ item }) => (
                         <Link asChild href={`/categories/${item.slug}`}>
                             <Pressable style={styles.category}>

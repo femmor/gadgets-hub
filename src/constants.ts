@@ -37,6 +37,7 @@ const COLORS = {
     info: '#5AC8FA',           // Cool Cyan
     white: '#FFFFFF',        // Pure White
     black: '#000000',        // Pure Black
+    gray: '#8E8E93',          // Neutral Gray
 
     overlayBackground: 'rgba(17, 17, 17, 0.5)', // Semi-transparent black
 };
