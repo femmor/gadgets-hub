@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 
-export function Product() {
+export default function Product() {
     return (
         <View>
             <Text>Product</Text>

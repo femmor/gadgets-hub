@@ -35,6 +35,8 @@ const COLORS = {
     warning: '#FFCC00',        // Golden Yellow
     error: '#FF453A',          // Fiery Red
     info: '#5AC8FA',           // Cool Cyan
+    white: '#FFFFFF',        // Pure White
+    black: '#000000',        // Pure Black
 
     overlayBackground: 'rgba(17, 17, 17, 0.5)', // Semi-transparent black
 };
